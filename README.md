@@ -48,7 +48,7 @@ The code is currently tested only on GPU.
 - Demo
     - If you just want to reproduce our result, please follow subsequent steps:
         - Prepare data
-        - Download one of the following trained model
+        - Download the following trained model
             ```
             wget https://webly-coldl.oss-cn-shanghai.aliyuncs.com/aircraft.pth
             ```
