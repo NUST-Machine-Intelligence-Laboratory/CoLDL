@@ -1,9 +1,9 @@
-# Co-LDL: A Co-training-based Label Distribution Learning Method for Tackling Lab
+# Co-LDL: A Co-training-based Label Distribution Learning Method for Tackling Label Noise
 
 
 Introduction
 ---
-This is the source code for our paper **Co-LDL: A Co-training-based Label Distribution Learning Method for Tackling Lab**
+This is the source code for our paper **Co-LDL: A Co-training-based Label Distribution Learning Method for Tackling Label Noise**
 
 
 Framework
@@ -22,7 +22,7 @@ How to use
 The code is currently tested only on GPU.
 
 - Data preparation
-    
+  
     Create a folder `Datasets` in the project root directory and download data into this folder using
     ```
     wget https://web-fgvc-496-5089-sh.oss-cn-shanghai.aliyuncs.com/web-aircraft.tar.gz
@@ -36,7 +36,7 @@ The code is currently tested only on GPU.
     ```
 
 - Source code
-    
+  
     - If you want to train the whole model from beginning using the source code, please follow subsequent steps:
         - Prepare data
         - Modify `GPU` in the `run.sh`
