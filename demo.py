@@ -32,8 +32,8 @@ if __name__ == '__main__':
     device = set_device(args.gpu)
 
     transform = build_transform(rescale_size=448, crop_size=448)
-    dataset = build_webfg_dataset(os.path.join('Datasets', cfg.dataset), transform['train'], transform['test'])
-    net = ResNet(args.arch, num_classes=args.nclasses)
+    dataset = build_webfg_dataset(os.path.join('Datasets', args.dataset), transform['train'], transform['test'])
+    net = ResNet(args.arch, num_classes=args.nclasses).to(device)
     net.load_state_dict(torch.load(args.model_path))
     test_loader = DataLoader(dataset['test'], batch_size=32, shuffle=False, num_workers=8, pin_memory=True)
     test_accuracy = evaluate(test_loader, net, device)
